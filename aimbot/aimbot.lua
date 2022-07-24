@@ -102,11 +102,11 @@ while task.wait() do
     if aimbotOn then
         local targ = getClosestPlrToMouse()
         if targ then
-            local whereToAim = GetRandom()
-            if whereToAim == 1 then 
+            GetRandom()
+            if RandomNumber == 1 then 
                 local currentcf = workspace.CurrentCamera.CFrame
                 workspace.CurrentCamera.CFrame = currentcf:Lerp(CFrame.new(currentcf.Position, targ.Character.Head.Position), _G.AimbotEasing)
-            elseif whereToAim == 2 then
+            elseif RandomNumber == 2 then
                 local currentcf = workspace.CurrentCamera.CFrame
                  workspace.CurrentCamera.CFrame = currentcf:Lerp(CFrame.new(currentcf.Position, targ.Character.UpperTorso.Position), _G.AimbotEasing)
             end
