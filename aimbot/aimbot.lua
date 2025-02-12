@@ -89,7 +89,7 @@ uis.InputEnded:Connect(function(input, processed)
         end
     end
 end)
--- // Head Or Torso Targeter Made By Altxria#9999
+
 function GetRandom()
     for i = 1,3 do
 	    RandomNumber = math.random(1,2)
